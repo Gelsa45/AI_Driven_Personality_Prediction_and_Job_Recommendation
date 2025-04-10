@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personality Result</title>
+    <link rel="stylesheet" href="static/style.css">
+    <!-- Optional: Add FontAwesome for icons if needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="result-container">
+        <div class="result-card">
+            <h1>Your Personality Insights</h1>
+            <div class="personality-info">
+                <!-- Personality Type -->
+                <h2>🌟 Your Personality Type</h2>
+                <p class="personality-type">{{ personality }}</p>
+
+                <!-- Description -->
+                <h3>Description:</h3>
+                <p class="personality-description">
+                    {{ description }}
+                </p>
+
+                <!-- Recommended Careers -->
+                <h3>Suitable Careers:</h3>
+                <p class="recommended-careers">
+                    {{ recommended_jobs }}
+                </p>
+            </div>
+
+            <!-- Back to Home Button -->
+             <a href="/" class="home-button"></a>
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 AI Personality Predictor. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Predictor</title>
+    
+    <!-- Fixed FontAwesome Issue -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🔍 AI Personality Predictor</h1>
+        <p>Discover your personality type and get career matchings!</p>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>Enter Your Text Below</h2>
+            <textarea id="userInput" placeholder="Write something about yourself..."></textarea>
+            <button onclick="predictPersonality()">Predict Personality</button>
+            <p id="error-message" class="error"></p>
+        </section>
+
+        <section id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Analyzing your personality...</p>
+        </section>
+
+        <section id="result-section" class="hidden">
+            <h2>🔹 Your Personality Type</h2>
+            <p id="personality-type"></p>
+            <h3>Description:</h3>
+            <p id="personality-description"></p>
+            <h3>Suitable Careers:</h3>
+            <p id="recommended-careers"></p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 AI Personality Predictor. All rights reserved.</p>
+    </footer>
+
+    <!-- Load script.js after the page content -->
+    <script src="static/script.js" defer></script>
+
+</body>
+</html>
